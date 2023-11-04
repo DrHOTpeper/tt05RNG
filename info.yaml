@@ -1,6 +1,6 @@
 --- 
 # Tiny Tapeout project information
-project: Single-digit Random number generator
+project: Single Digit Random number generator
   wokwi_id:    380325074519181        # If using wokwi, set this to your project's ID
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
