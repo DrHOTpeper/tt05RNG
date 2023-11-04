@@ -1,7 +1,7 @@
 --- 
 # Tiny Tapeout project information
-project:
-  wokwi_id:    0        # If using wokwi, set this to your project's ID
+project: Single-digit Random number generator
+  wokwi_id:    380325074519181        # If using wokwi, set this to your project's ID
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
@@ -21,23 +21,24 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       ""      # Your name
-  title:        ""      # Project title
+  author:       "Kevin Ho"      # Your name
+  title:        "Single-digit Random Number Generator"      # Project title
   language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  ""      # Short description of what your project does
+  description:  "Generate random digit in Hexadecimal form"      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
-  how_it_works: |
+  how_it_works: This design uses 4 DRS flip-flops and xor feedback to generate 4bits in binary form, with a built-in 4bits to 7 segments logic design to convert the binary output from the DSR flip-flops to the 7segment display. In total, there are 2 inputs to the chip and 7 outputs from the chip connected to the 7-segment display.|
       Explain how your project works
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  how_to_test:  |
+  how_to_test:  To start the simulation, press the green button to generate the next random number. Hold the green button to keep generating new random numbers, and release the button to stop. 
+  Flip the switch to set the display to "F". Set the clock to random frequency, it determines how fast the random number will change when holding on to the green button.  |
       Explain how to test your project
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - none
-    - none
+    - slide switch
+    - pushbutton
     - none
     - none
     - none
